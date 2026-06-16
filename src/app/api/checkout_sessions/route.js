@@ -1,10 +1,11 @@
 import { NextResponse } from 'next/server'
 import { headers } from 'next/headers'
-import { stripe } from '@/lib/stripe';
+
 import { auth } from '@/lib/auth';
 import { metadata } from '@/app/layout';
+import { stripe } from '@/lib/stripe';
 
-// import { stripe } from '../../../lib/stripe'
+
 
 export async function POST() {
     try {
@@ -38,7 +39,7 @@ export async function POST() {
 
             },
             mode: 'subscription',
-            success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+            success_url: `${origin}/pricing/success?session_id={CHECKOUT_SESSION_ID}`,
         });
         return NextResponse.redirect(session.url, 303)
     } catch (err) {

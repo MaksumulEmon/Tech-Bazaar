@@ -119,7 +119,7 @@ export default function SellerPricingPage() {
                   className={`mt-8 w-full  font-medium`}
                 >Contact Sales</Button>
               ) : (
-                <form action={'/api/subscription'} method="POST">
+                <form action={'/api/checkout_sessions'} method="POST">
                   <Button
                    type="submit"
                     className={`mt-8 w-full  font-medium`}
