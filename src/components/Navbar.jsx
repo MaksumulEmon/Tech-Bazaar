@@ -137,13 +137,13 @@ const Navbar = () => {
                     onAction={(key) => console.log(`Selected: ${key}`)}
                   >
                     <Dropdown.Item id="new-file" textValue="New file">
-                      {/* <Link
+                      <Link
                         className="flex items-center gap-2"
                         href={`/dashboard/${user?.role}`}
-                      > */}
+                      >
                         <MdDashboard />
                         <Label>Dashboard</Label>
-                      {/* </Link> */}
+                      </Link>
                     </Dropdown.Item>
 
                     <Dropdown.Item id="copy-link" textValue="Copy link">

@@ -35,13 +35,13 @@ export default async function DashboardSidebar() {
             { icon: ChartArea, label: "Overview", link: '/dashboard/buyer' },
             { icon: TbAsset, label: "Products", link: '/dashboard/products' },
             { icon: BiMoney, label: "Transscation", link: '/dashboard/transcation' },
-          
+
 
         ],
         "admin": [
             { icon: House, label: "Overview", link: '/dashboard/buyer' },
             { icon: TbAsset, label: "Products", link: '/dashboard/products' },
-            { icon: BiMoney, label: "Transscation", link: '/dashboard/transcation' }
+            // { icon: BiMoney, label: "Transscation", link: '/dashboard/transcation' }
 
         ],
 
@@ -99,7 +99,7 @@ export default async function DashboardSidebar() {
                         </Drawer.Header>
                         <Drawer.Body>
 
-                            <nav className="flex flex-col gap-1 w-50 border border-r-2 pt-5">
+                            <nav className="hidden md:flex flex-col gap-1 w-50 border-r-2 pt-5">
                                 <Image
                                     src={`/logo-xl.png`}
                                     height={100}
